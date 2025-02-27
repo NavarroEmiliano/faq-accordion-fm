@@ -1,0 +1,63 @@
+:root {
+    --white: #ffffff;
+    --light-pink: #f9f0ff;
+    --grayish-purple: #8c6991;
+    --dark-purple: #2f1533;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img,
+picture {
+    inline-size: 100%;
+    block-size: auto;
+}
+
+body {
+    min-block-size: 100vh;
+    background-image: url("assets/images/background-pattern-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top;
+    font-family: "Work Sans", sans-serif;
+    background-color: var(--light-pink);
+    display: grid;
+    place-items: center;
+}
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    background-color: var(--white);
+}
+
+.faq__header {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.faq__icon {
+    block-size: clamp(24px, 6vw, 40px);
+    inline-size: clamp(24px, 6vw, 40px);
+}
+.faq__title {
+    font-size: clamp(32px, 8vw,56px);
+}
+
+.faq__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    body {
+        background-image: url("assets/images/background-pattern-desktop.svg");
+    }
+}
