@@ -3,12 +3,15 @@
     --light-pink: #f9f0ff;
     --grayish-purple: #8c6991;
     --dark-purple: #2f1533;
+    --pink: #AD28EB;
+    interpolate-size: allow-keywords;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
 }
 
 img,
@@ -23,17 +26,20 @@ body {
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: top;
-    font-family: "Work Sans", sans-serif;
     background-color: var(--light-pink);
     display: grid;
     place-items: center;
+    padding-inline: 24px;
 }
 
 .faq {
     display: flex;
     flex-direction: column;
-    padding: 24px;
+    padding: clamp(24px, 6vw, 40px);
     background-color: var(--white);
+    border-radius: clamp(8px, 3vw, 16px);
+    max-inline-size: 600px;
+    gap: 24px;
 }
 
 .faq__header {
@@ -46,18 +52,68 @@ body {
     block-size: clamp(24px, 6vw, 40px);
     inline-size: clamp(24px, 6vw, 40px);
 }
+
 .faq__title {
-    font-size: clamp(32px, 8vw,56px);
+    font-size: clamp(32px, 8vw, 56px);
 }
 
 .faq__list {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 40px;
+}
+
+.faq__item {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.faq__question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    text-align: start;
+    gap: 32px;
+    background-color: var(--white);
+}
+
+.faq__question p {
+    font-size: clamp(14px, 3vw, 18px);
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.faq__question img {
+    inline-size: 30px;
+    block-size: 30px;
+}
+
+.faq__question:hover {
+    color: var(--pink);
+}
+
+.faq__answer {
+    height: 0;
+    overflow: hidden;
+    padding-top: 0px;
+    transition-property: height,padding-block-start;
+    transition-duration: 0.5s;
+}
+
+.show-answer {
+    height: auto;
+    padding-block-start: 24px;
+    height: calc-size(auto);
 }
 
 @media (min-width: 768px) {
     body {
         background-image: url("assets/images/background-pattern-desktop.svg");
+    }
+
+    .faq {
+        gap: 32px;
     }
 }
