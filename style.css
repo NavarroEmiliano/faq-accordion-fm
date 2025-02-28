@@ -108,6 +108,10 @@ body {
     height: calc-size(auto);
 }
 
+.hidden {
+    display: none;
+}
+
 @media (min-width: 768px) {
     body {
         background-image: url("assets/images/background-pattern-desktop.svg");
