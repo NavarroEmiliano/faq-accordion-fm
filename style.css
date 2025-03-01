@@ -1,7 +1,7 @@
 :root {
     --white: #ffffff;
     --light-pink: #f9f0ff;
-    --grayish-purple: #8c6991;
+    --grayish-purple: #8b6990;
     --dark-purple: #2f1533;
     --pink: #AD28EB;
     interpolate-size: allow-keywords;
@@ -40,6 +40,7 @@ body {
     border-radius: clamp(8px, 3vw, 16px);
     max-inline-size: 600px;
     gap: 24px;
+    box-shadow: 0px 10px 25px 25px rgba(0, 0, 0, 0.03);
 }
 
 .faq__header {
@@ -66,7 +67,6 @@ body {
 .faq__item {
     display: flex;
     flex-direction: column;
-
 }
 
 .faq__question {
@@ -92,6 +92,7 @@ body {
 
 .faq__question:hover {
     color: var(--pink);
+    cursor: pointer;
 }
 
 .faq__answer {
@@ -100,6 +101,12 @@ body {
     padding-top: 0px;
     transition-property: height,padding-block-start;
     transition-duration: 0.5s;
+}
+
+.faq__answer p {
+    font-size: clamp(14px, 3vw, 16px);
+    line-height: 1.5;
+    color: var(--grayish-purple);
 }
 
 .show-answer {
