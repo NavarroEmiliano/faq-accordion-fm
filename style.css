@@ -128,4 +128,8 @@ body {
     .faq {
         gap: 32px;
     }
+
+    .faq__list {
+        gap: 48px;
+    }
 }
