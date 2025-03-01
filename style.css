@@ -41,7 +41,7 @@ body {
     border-radius: clamp(8px, 3vw, 16px);
     max-inline-size: 600px;
     gap: 24px;
-    box-shadow: 0px 10px 25px 25px rgba(0, 0, 0, 0.04);
+    box-shadow: 0px 20px 25px 25px rgba(0, 0, 0, 0.04);
 }
 
 .faq__header {
