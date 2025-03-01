@@ -41,7 +41,7 @@ body {
     border-radius: clamp(8px, 3vw, 16px);
     max-inline-size: 600px;
     gap: 24px;
-    box-shadow: 0px 20px 25px 25px rgba(0, 0, 0, 0.04);
+    box-shadow: 0px 20px 25px 25px rgba(0, 0, 0, 0.05);
 }
 
 .faq__header {
@@ -84,6 +84,7 @@ body {
     font-size: clamp(14px, 3vw, 18px);
     line-height: 1.5;
     font-weight: 600;
+    letter-spacing: 1.1px;
 }
 
 .faq__question img {
