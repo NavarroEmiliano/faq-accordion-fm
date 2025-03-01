@@ -25,4 +25,5 @@ faqList.addEventListener("click", function(event) {
   iconPlus.classList.toggle("hidden");
   iconMinus.classList.toggle("hidden");
   answer.classList.toggle("show-answer");
+  btnClicked.setAttribute('aria-expanded', answer.classList.contains('show-answer'));
 });
