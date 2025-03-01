@@ -76,14 +76,14 @@ body {
     justify-content: space-between;
     border: none;
     text-align: start;
-    gap: 32px;
+    gap: 16px;
     background-color: var(--white);
 }
 
 .faq__question p {
     font-size: clamp(14px, 3vw, 18px);
     line-height: 1.5;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .faq__question img {
