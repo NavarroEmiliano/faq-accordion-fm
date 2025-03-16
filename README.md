@@ -45,5 +45,5 @@ Users should be able to:
 
 ## Author
 
-- Website - https://www.your-site.com
-- Frontend Mentor - https://www.frontendmentor.io/profile/yourusername
+- Website - https://emiliano-navarro.vercel.app/
+- Frontend Mentor - https://www.frontendmentor.io/profile/NavarroEmiliano
